@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>左右div等高度</title>
+        <style type="text/css">
+        	*{margin: 0;padding: 0;}
+			.contain1{
+				display: block;
+				background: url(images/bg-1.png) repeat-y;
+				border:2px solid #ccc;
+				width: 800px;
+				margin: 0 auto;
+			}
+			.left{
+				display: block;
+				float: left;
+				width: 300px;
+				height: auto;
+			}
+			ul{
+				display: block;
+				font-size: 20px;
+				line-height: 30px;
+				width: 200px;
+				margin: 0 auto;
+			}
+			li{
+				display: block;
+				list-style: none;
+				height: 30px;
+				text-align: center;
+				background: #f5f5f6;
+				margin: 2% 0;
+			}
+			.right{
+				display: block;
+				float: left;
+				width: 400px;
+				height: auto;
+			}
+			.block{
+				height: 200px;
+				width: 200px;
+				background: #09f;
+				margin: 2% auto;
+				color: #fff;
+				text-align: center;
+				font-size: 20px;
+				line-height: 200px;
+			}
+			.c{
+				clear: both;
+			}
+        </style>
+    </head>
+    <body>
+    	<div class="contain1">
+    		<div class="left">
+    			<ul>
+    				<li>nav-li-1</li>
+    				<li>nav-li-2</li>
+    				<li>nav-li-3</li>
+    				<li>nav-li-4</li>
+    				<li>nav-li-5</li>
+    				<li>nav-li-6</li>
+    			</ul>
+    		</div>
+    		<div class="right">
+    			<div class="block">方块1</div>
+    			<div class="block">方块2</div>
+    			<!-- <div class="block">方块3</div> -->
+    			<!-- <div class="block">方块4</div> -->
+    		</div>
+    		<div class="c"></div>
+    	</div>
+    </body>
+</html>
